@@ -1,0 +1,138 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3a7bd5, #3a6073);
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Container for Text and Card */
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Form Card */
+form {
+  position: relative;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: slideIn 1.5s ease forwards;
+  z-index: 2; /* Keep above the background */
+  transform: translateX(-50%);
+  left: 25%; /* Center horizontally */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect on Card */
+form:hover {
+  background: #f0f8ff; /* Light blue hover background */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #3a7bd5;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #295a92;
+}
+
+/* Animation */
+@keyframes slideIn {
+  0% {
+    transform: translateY(200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+input {
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form button {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+} */
